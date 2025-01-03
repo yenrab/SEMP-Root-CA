@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2660FD872D289A22008B2016 /* X509 in Frameworks */ = {isa = PBXBuildFile; productRef = 2660FD862D289A22008B2016 /* X509 */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		2660FD792D289A0B008B2016 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2660FD872D289A22008B2016 /* X509 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 			);
 			name = "SEMP-Root-CA";
 			packageProductDependencies = (
+				2660FD862D289A22008B2016 /* X509 */,
 			);
 			productName = "SEMP-Root-CA";
 			productReference = 2660FD7B2D289A0B008B2016 /* SEMP-Root-CA */;
@@ -106,6 +112,9 @@
 			);
 			mainGroup = 2660FD722D289A0B008B2016;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2660FD852D289A22008B2016 /* XCRemoteSwiftPackageReference "swift-certificates" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2660FD7C2D289A0B008B2016 /* Products */;
 			projectDirPath = "";
@@ -289,6 +298,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2660FD852D289A22008B2016 /* XCRemoteSwiftPackageReference "swift-certificates" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-certificates.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2660FD862D289A22008B2016 /* X509 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2660FD852D289A22008B2016 /* XCRemoteSwiftPackageReference "swift-certificates" */;
+			productName = X509;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2660FD732D289A0B008B2016 /* Project object */;
 }
